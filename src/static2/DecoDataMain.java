@@ -17,8 +17,9 @@ public class DecoDataMain {
         DecoData data2 = new DecoData();
         data2.instanceCall();
 
-        //추가
-        //인스턴스를 통한 접근
+        // 추가
+        // 인스턴스를 통한 접근 -> 인스턴스는 참조값이 필요없는 static에 접근 가능함
+        // 햐지만 추천하진 않음. 코드만 봤을 때는 인스턴스 메서드에 접근한 것처럼 보이기 때문
         DecoData data3 = new DecoData();
         data3.staticCall();
 
