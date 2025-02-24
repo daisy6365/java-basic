@@ -1,6 +1,7 @@
 package static2;
 
 public class DecoData {
+
     // 인스턴스 변수
     private int instanceValue;
     // 정적 변수
