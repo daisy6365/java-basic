@@ -2,13 +2,19 @@ package static2;
 
 public class DecoData {
 
+    // 인스턴스 변수
     private int instanceValue;
+    // 정적 변수
     private static int staticValue;
 
     /**
      * 정적(static) 메서드
      * 때문에 static 변수와 메서드만 접근 및 사용이 가능
      * 인스턴스 변수와 메서드는 compile 에러 발생
+     *
+     * staticCall()은 static 메서드이기 때문에,
+     * 인스턴스 변수, 메서드 접근이 불가
+     * 정적은 가능
      */
     public static void staticCall() {
         //instanceValue++; //인스턴스 변수 접근, compile error
