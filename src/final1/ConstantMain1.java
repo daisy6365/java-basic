@@ -2,6 +2,12 @@ package final1;
 
 public class ConstantMain1 {
 
+    /**
+     * 이러한 부분에서 참여자 수를 변경하고 싶을 때,
+     * main() -> 1000 과 process() -> 1000을 변경해야함
+     * 이러한 부분을 상수로 변경하여
+     * 참여자 수를 변경하고 싶을 때, 상수 값만 변경하면 됨
+     */
     public static void main(String[] args) {
         System.out.println("프로그램 최대 참여자 수 " + 1000);
         int currentUserCount = 999;
