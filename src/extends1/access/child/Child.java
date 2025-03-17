@@ -15,6 +15,10 @@ public class Child extends Parent {
         //defaultMethod(); //다른 패키지 접근 불가, 컴파일 오류
         //privateMethod(); //접근 불가, 컴파일 오류
 
+        /**
+         * 부모 메서드 내부에서 호출 된 메서드 이기 때문에
+         * defaultMethod, privateMethod 간접적으로 호출 됨
+         */
         printParent();
     }
 }
