@@ -9,6 +9,10 @@ public class CastingMain2 {
         //poly.childMethod();
 
         //일시적 다운캐스팅 - 해당 메서드를 호출하는 순간만 다운캐스팅
+        /**
+         * ((Child) x001).childMethod()
+         *  -> 참조값을 먼저 읽은 다음, Child타입으로 일시적 다운캐스팅
+         */
         ((Child) poly).childMethod();
     }
 }
