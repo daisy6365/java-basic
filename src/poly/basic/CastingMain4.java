@@ -8,6 +8,12 @@ public class CastingMain4 {
         Child child1 = (Child) parent1;
         child1.childMethod(); //문제 없음
 
+        /**
+         * new Parent(); 즉, 상속관계를 바라볼 수 없는
+         * 부모만!!! 메모리영역에 생성되었음
+         * 자식은 없기 때문에 다운캐스팅을 하는 과정에서 Child 객체를 찾을 수 없음
+         * ClassCastException 발생
+         */
         Parent parent2 = new Parent();
 
         Child child2 = (Child) parent2; //런타임 오류 - ClassCastException
