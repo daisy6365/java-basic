@@ -19,6 +19,9 @@ public class CastingMain5 {
             Child child = (Child) parent;
             child.childMethod();
         }
+        else{
+            System.out.println("Child 인스턴스 아님. \n종료");
+        }
     }
 
 }
